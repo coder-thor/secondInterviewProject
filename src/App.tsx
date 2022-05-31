@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// deps
+import style from "styled-components";
+
+// router
+import RouterConf from "./router";
+
+const AppStyle = style.div`
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyle>
+      <RouterConf />
+    </AppStyle>
   );
 }
 
